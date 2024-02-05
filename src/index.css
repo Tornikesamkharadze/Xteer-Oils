@@ -1,0 +1,513 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+.heading {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.padding-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-background\/70 button {
+  color: #000;
+}
+
+/* LoadingScreen.css */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Set your desired background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loading-screen h1 {
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.slide-text {
+  width: 78%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 50%;
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 900;
+  font-family: "Cairo", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .slide-text {
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-family: "Cairo", sans-serif;
+  }
+}
+
+.span-reseller {
+  font-size: 16px;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: auto;
+}
+.swiper-slide {
+  border-radius: 10px;
+  padding: 30px 30px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.azmol2 {
+  width: 70% !important;
+}
+.azmol1 {
+  width: 100% !important;
+}
+.aminol {
+  width: 70% !important;
+}
+.companies-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttonText {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 4px;
+  width: 100%;
+}
+
+.cardimg {
+  max-width: 350px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: "scale(1.25) translateY(-6px)";
+  z-index: 0;
+}
+
+/* gento about */
+
+.gento-about-text {
+  padding: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Cairo", sans-serif;
+}
+
+.LinkContent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+/* // navbar bg color  */
+
+.backdrop-saturate-150 {
+  opacity: 0.85;
+  background: #fff;
+  font-size: 20px;
+  color: #000;
+  width: 100%;
+  height: 80px;
+}
+
+.backdrop-saturate-150 {
+  padding: 0 2px;
+  font-size: 47px;
+}
+
+/* /// card css */
+.container {
+  position: relative;
+}
+
+.container .card {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1bbfe9;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after {
+  content: "Gento";
+  position: absolute;
+  top: 55%;
+  left: 0%;
+  font-size: 8em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+@media screen and (max-width: 768px) {
+  .container .card:after {
+    font-size: 5em;
+    top: 70%;
+  }
+}
+@media screen and (min-width: 370px) {
+  .container .card:after {
+    font-size: 4em;
+    top: 70%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container .card:after {
+    font-size: 5em;
+    top: 70%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .container .card:after {
+    font-size: 8em;
+    top: 50%;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .container .card:after {
+    font-size: 8em;
+    top: 50%;
+  }
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(-25%);
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(20deg);
+  width: 270px;
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.container .card:hover .contentBx {
+  height: 210px;
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container .card:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover {
+  /* other bug */
+  background: #b90000;
+}
+
+.container .card .contentBx .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(2) {
+  background: #1bbfe9;
+}
+
+.container .card .contentBx .color span:nth-child(3) {
+  background: #1b2fe9;
+}
+
+.container .card .contentBx .color span:nth-child(4) {
+  background: #080481;
+}
+
+.container .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.container .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.7s;
+}
+
+.content-slider {
+  margin-left: 400px;
+}
+
+.css-1vt2rd0-MuiTypography-root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  color: red;
+}
+
+.overlay {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the 0.5 for the desired darkness */
+}
+
+/* // burgerbar Styling */
+
+.MuiBox-root .css-yhb49f {
+  background-color: transparent;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+.MuiDrawer-paper .MuiList-root .MuiListItem-root .MuiTypography-root {
+  color: white;
+}
+
+.css-129xe1v-MuiTypography-root {
+  /* color: white !important; */
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.css-vib9bs {
+  flex-direction: column;
+  width: calc(100% + 1.625rem);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: -16px;
+  opacity: 1;
+  background: transparent;
+  color: #344767;
+  border-radius: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-pdfPagecanvas {
+  width: 340px !important;
+}
+.ant-btn .css-dev-only-do-not-override-pr0fja .ant-btn-primary {
+  color: #000;
+}
+
+.bzGhta {
+  gap: 30px;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 50.25%; /* Player ratio: 100 / (1280 / 720) */
+  background-color: #000;
+  cursor: pointer;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-content {
+  padding: 100px; /* Default padding value */
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .video-content {
+    padding: 0px; /* Default padding value */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Apply padding of 100px on iPad */
+  .video-content {
+    padding: 50px; /* Default padding value */
+  }
+}
